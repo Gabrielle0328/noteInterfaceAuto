@@ -1,0 +1,13 @@
+host: 'http://note-api.wps.cn'
+# 月亮我抱走了 -- 用户A
+userId1: '758797333'
+wps_sid1: 'wps_sid=V02SQzSIdSSJrlietN-FXU2L2GHPc8000adf855d002d3a5415'
+userId1_error: 'asdfghjkl'
+wps_sid1_error: 'wps_sid=VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV'
+userId1_overdue: ''
+wps_sid1_overdue: ''
+# TERESA  -- 用户B
+userId2: '309665740'
+wps_sid2: 'wps_sid=V02SCHWiXhSR0PBG15hmWkr-delbeIY00a98665a0012751fcc'
+key: ''
+iv: ''
