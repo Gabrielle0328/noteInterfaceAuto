@@ -1,6 +1,7 @@
 import unittest
 from BeautifulReport import BeautifulReport
 import os
+from datetime import datetime
 
 ENVIRON = "Online"  # 线上 Online 测试环境 Offline
 Dir = os.path.dirname(os.path.abspath(__file__))
@@ -8,9 +9,14 @@ Dir = os.path.dirname(os.path.abspath(__file__))
 
 def run(test_suite):
     # 定义输出的文件位置和名字
-    filename = "report.html"
+
+    # 获取当前的日期和时间
+    now = datetime.now()
+    # 按照"年月日时分秒"的格式输出
+    time_mark = now.strftime("%Y_%m_%d-%H_%M_%S")
+    filename = f"{time_mark}_report.html"
     result = BeautifulReport(test_suite)
-    result.report(filename=filename, description='测试报告', report_dir='./')
+    result.report(filename=filename, description='测试报告', report_dir='./report')
 
 
 if __name__ == '__main__':
